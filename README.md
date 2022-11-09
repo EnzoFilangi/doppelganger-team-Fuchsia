@@ -13,6 +13,18 @@ to make the test fail for the right reason, i.e, triggering
 the bugs. You must do so by **adding only test code** - you
 are not allowed to change the production code.
 
+## Team
+
+We are team Fuchsia, composed of :
+
+- Damien HUANG
+- Enzo FILANGI
+- Faris CHTATOU
+- Priestley DECELIAN
+- Sami EL BAIED
+
+We choose to work in JavaScript for this Kata
+
 ## Step 1 - without any library
 
 For this step, you are *not* allowed to use an external library. You have to implement
