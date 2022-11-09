@@ -10,12 +10,12 @@ test('should throw when not authorized', (t) => {
 
   const auth = {
     authorize:
-      () => true
+      () => false
   }
   const test = new Calculator(auth)
 
   const caller = () => test.divide(numerator, denominator)
-  t.doesNotThrow(caller)
+  t.throws(caller)
 
 
   t.end()
