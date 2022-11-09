@@ -4,8 +4,11 @@ const DiscountApplier = require('../discount-applier');
 class Notifier {
   constructor () {
   }
+
+  result = '';
+
   notify (user,message) {
-    console.log(user + ' ' + message);
+    this.result = user + ' ' + message;
   }
 }
 
@@ -25,6 +28,8 @@ test('apply v2', (t) => {
   let users = ['user1','user2','user3','user4'];
 
   applier.applyV2(discount,users);
+
+  t.equal(notifier.result,`user4 You've got a new discount of 10`);
 
   t.end()
 })
