@@ -1,14 +1,11 @@
 const sender = require('../mail-sender')
-const test = require('tape')
 
-test('send v1', (t) => {
+test('send v1', () => {
   // TODO: write a test that fails due to the bug in
   // MailSender.sendV1
-  t.end()
 })
 
-test('send v2', (t) => {
+test('send v2', () => {
   // TODO: wrte a test that fails due to the bug in
   // MailSender.sendV2
-  t.end()
 })
